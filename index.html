@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-11-23 Sun 13:34 -->
+<!-- 2025-11-24 Mon 22:13 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Car Lease Option Valuation Case</title>
@@ -253,45 +253,45 @@ $(function() {    $('.note').before("<p class='admonition-title note'>Note</p>")
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org499033d">1. Instructions</a></li>
-<li><a href="#orga6a567d">2. Case Description</a>
+<li><a href="#org8f21c17">1. Instructions</a></li>
+<li><a href="#orgdbbbe57">2. Case Description</a>
 <ul>
-<li><a href="#org06986df">2.1. Lease A – with purchase option</a></li>
-<li><a href="#orgf2bb491">2.2. Lease B – no purchase option</a></li>
+<li><a href="#org7cf71cd">2.1. Lease A – with purchase option</a></li>
+<li><a href="#org7ec63ba">2.2. Lease B – no purchase option</a></li>
 </ul>
 </li>
-<li><a href="#orgd33e775">3. Numerical Data for the Binomial Model</a></li>
-<li><a href="#org4ca6641">4. Questions</a>
+<li><a href="#org576d114">3. Numerical Data for the Binomial Model</a></li>
+<li><a href="#org78aa54b">4. Questions</a>
 <ul>
-<li><a href="#org171df74">4.1. Car Value Tree</a>
+<li><a href="#org98d705e">4.1. Car Value Tree</a>
 <ul>
-<li><a href="#org6b297ae">4.1.1. Using the binomial model, compute the possible car values at the end of 2 years (after two 1-year steps). Compute the car value in each state:</a></li>
-<li><a href="#org9e65789">4.1.2. In a spreadsheet, construct a <b>two-period binomial price tree</b> showing the possible car values at each node (time 0, time 1, and time 2). Label each node clearly with the car value.</a></li>
+<li><a href="#org9753c28">4.1.1. Using the binomial model, compute the possible car values at the end of 2 years (after two 1-year steps). Compute the car value in each state:</a></li>
+<li><a href="#orgd11c31b">4.1.2. In a spreadsheet, construct a <b>two-period binomial price tree</b> showing the possible car values at each node (time 0, time 1, and time 2). Label each node clearly with the car value.</a></li>
 </ul>
 </li>
-<li><a href="#org82c7338">4.2. Option Payoffs at Maturity</a>
+<li><a href="#orgb9ae22a">4.2. Option Payoffs at Maturity</a>
 <ul>
-<li><a href="#org0df0c43">4.2.1. For each final node (UU, UD/DU, DD), compute the <b>payoff of the purchase option</b>:</a></li>
+<li><a href="#org1fd0192">4.2.1. For each final node (UU, UD/DU, DD), compute the <b>payoff of the purchase option</b>:</a></li>
 </ul>
 </li>
-<li><a href="#orgf4272ee">4.3. Risk-Neutral Valuation and Option Value Today</a>
+<li><a href="#org6dc4b27">4.3. Risk-Neutral Valuation and Option Value Today</a>
 <ul>
-<li><a href="#org4c03463">4.3.1. Compute the <b>risk-neutral probability</b> \( p^* \) for an up move using:</a></li>
-<li><a href="#org5fbfdf7">4.3.2. Starting from the option payoffs at the final nodes, work backward through the tree using <b>risk-neutral valuation</b> to find the <b>value of the option at each time-1 node</b>, then at time 0.</a></li>
-<li><a href="#orge3111e4">4.3.3. Interpretation:</a></li>
+<li><a href="#orgdbf654f">4.3.1. Compute the <b>risk-neutral probability</b> \( p^* \) for an up move using:</a></li>
+<li><a href="#org8750fb8">4.3.2. Starting from the option payoffs at the final nodes, work backward through the tree using <b>risk-neutral valuation</b> to find the <b>value of the option at each time-1 node</b>, then at time 0.</a></li>
+<li><a href="#org85ea189">4.3.3. Interpretation:</a></li>
 </ul>
 </li>
-<li><a href="#org5ebe5a0">4.4. Comparing to the Extra Lease Payments</a>
+<li><a href="#org4a097fa">4.4. Comparing to the Extra Lease Payments</a>
 <ul>
-<li><a href="#orgcbf21a3">4.4.1. Compute the <b>present value (PV)</b> of the extra lease cost in Lease A</a></li>
-<li><a href="#org27e8940">4.4.2. Compare:</a></li>
+<li><a href="#orgb4090c2">4.4.1. Compute the <b>present value (PV)</b> of the extra lease cost in Lease A</a></li>
+<li><a href="#org3b96a06">4.4.2. Compare:</a></li>
 </ul>
 </li>
-<li><a href="#org0fc24a5">4.5. 5. Conceptual and Discussion Questions</a>
+<li><a href="#org5697dae">4.5. 5. Conceptual and Discussion Questions</a>
 <ul>
-<li><a href="#orgc93be3c">4.5.1. In which future scenarios (states of the world) would you choose to <b>exercise</b> the purchase option (i.e., buy the car at the end of the lease)? When would you <b>walk away</b> and simply return the car?</a></li>
-<li><a href="#org4bbe2f9">4.5.2. How would the value of the purchase option change if:</a></li>
-<li><a href="#org2fd00a0">4.5.3. From the dealership’s perspective, why might they be willing to offer a purchase option that appears underpriced (if that’s what you find)? What other business considerations or customer behaviors might affect how they set the lease terms?</a></li>
+<li><a href="#org8feb749">4.5.1. In which future scenarios (states of the world) would you choose to <b>exercise</b> the purchase option (i.e., buy the car at the end of the lease)? When would you <b>walk away</b> and simply return the car?</a></li>
+<li><a href="#org019237d">4.5.2. How would the value of the purchase option change if:</a></li>
+<li><a href="#orgb38eac1">4.5.3. From the dealership’s perspective, why might they be willing to offer a purchase option that appears underpriced (if that’s what you find)? What other business considerations or customer behaviors might affect how they set the lease terms?</a></li>
 </ul>
 </li>
 </ul>
@@ -299,8 +299,8 @@ $(function() {    $('.note').before("<p class='admonition-title note'>Note</p>")
 </ul>
 </div>
 </div>
-<div id="outline-container-org499033d" class="outline-2">
-<h2 id="org499033d"><span class="section-number-2">1.</span> Instructions</h2>
+<div id="outline-container-org8f21c17" class="outline-2">
+<h2 id="org8f21c17"><span class="section-number-2">1.</span> Instructions</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 In this case, you will use a <b>two-period binomial option pricing model</b> to value
@@ -310,12 +310,16 @@ option.
 </p>
 
 <p>
-Show your work clearly. You may use a calculator or spreadsheet.
+Show your work clearly in a spreadsheet.
+</p>
+
+<p>
+For background, <a href="https://github.com/Matt-Brigida/auto_lease_case/blob/master/Auto%20Lease%20-%20June_22_Final.docx">here is a paper I wrote on valuing the option in an auto lease.</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orga6a567d" class="outline-2">
-<h2 id="orga6a567d"><span class="section-number-2">2.</span> Case Description</h2>
+<div id="outline-container-orgdbbbe57" class="outline-2">
+<h2 id="orgdbbbe57"><span class="section-number-2">2.</span> Case Description</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 You are about to graduate from college and have just accepted a full-time job in
@@ -337,8 +341,8 @@ At a local dealership, you find a compact SUV with the following details:
 The salesperson offers you a <b>2-year closed-end lease</b> with two options:
 </p>
 </div>
-<div id="outline-container-org06986df" class="outline-3">
-<h3 id="org06986df"><span class="section-number-3">2.1.</span> Lease A – with purchase option</h3>
+<div id="outline-container-org7cf71cd" class="outline-3">
+<h3 id="org7cf71cd"><span class="section-number-3">2.1.</span> Lease A – with purchase option</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>24 monthly payments (exact amount not important for this analysis)</li>
@@ -350,8 +354,8 @@ The salesperson offers you a <b>2-year closed-end lease</b> with two options:
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf2bb491" class="outline-3">
-<h3 id="orgf2bb491"><span class="section-number-3">2.2.</span> Lease B – no purchase option</h3>
+<div id="outline-container-org7ec63ba" class="outline-3">
+<h3 id="org7ec63ba"><span class="section-number-3">2.2.</span> Lease B – no purchase option</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>Identical to Lease A in every respect <b>except</b>:
@@ -390,8 +394,8 @@ To value this option, you will use a <b>two-period binomial option pricing model
 </div>
 </div>
 </div>
-<div id="outline-container-orgd33e775" class="outline-2">
-<h2 id="orgd33e775"><span class="section-number-2">3.</span> Numerical Data for the Binomial Model</h2>
+<div id="outline-container-org576d114" class="outline-2">
+<h2 id="org576d114"><span class="section-number-2">3.</span> Numerical Data for the Binomial Model</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Use the following assumptions throughout the assignment:
@@ -450,16 +454,16 @@ Therefore:
 </ul>
 </div>
 </div>
-<div id="outline-container-org4ca6641" class="outline-2">
-<h2 id="org4ca6641"><span class="section-number-2">4.</span> Questions</h2>
+<div id="outline-container-org78aa54b" class="outline-2">
+<h2 id="org78aa54b"><span class="section-number-2">4.</span> Questions</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org171df74" class="outline-3">
-<h3 id="org171df74"><span class="section-number-3">4.1.</span> Car Value Tree</h3>
+<div id="outline-container-org98d705e" class="outline-3">
+<h3 id="org98d705e"><span class="section-number-3">4.1.</span> Car Value Tree</h3>
 <div class="outline-text-3" id="text-4-1">
 </div>
-<div id="outline-container-org6b297ae" class="outline-4">
-<h4 id="org6b297ae"><span class="section-number-4">4.1.1.</span> Using the binomial model, compute the possible car values at the end of 2 years (after two 1-year steps). Compute the car value in each state:</h4>
+<div id="outline-container-org9753c28" class="outline-4">
+<h4 id="org9753c28"><span class="section-number-4">4.1.1.</span> Using the binomial model, compute the possible car values at the end of 2 years (after two 1-year steps). Compute the car value in each state:</h4>
 <div class="outline-text-4" id="text-4-1-1">
 <ul class="org-ul">
 <li>Up-Up (UU)</li>
@@ -483,20 +487,20 @@ Write your answers:
 </ul>
 </div>
 </div>
-<div id="outline-container-org9e65789" class="outline-4">
-<h4 id="org9e65789"><span class="section-number-4">4.1.2.</span> In a spreadsheet, construct a <b>two-period binomial price tree</b> showing the possible car values at each node (time 0, time 1, and time 2). Label each node clearly with the car value.</h4>
+<div id="outline-container-orgd11c31b" class="outline-4">
+<h4 id="orgd11c31b"><span class="section-number-4">4.1.2.</span> In a spreadsheet, construct a <b>two-period binomial price tree</b> showing the possible car values at each node (time 0, time 1, and time 2). Label each node clearly with the car value.</h4>
 </div>
 </div>
-<div id="outline-container-org82c7338" class="outline-3">
-<h3 id="org82c7338"><span class="section-number-3">4.2.</span> Option Payoffs at Maturity</h3>
+<div id="outline-container-orgb9ae22a" class="outline-3">
+<h3 id="orgb9ae22a"><span class="section-number-3">4.2.</span> Option Payoffs at Maturity</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 At the end of the lease (after 2 years), you have the right (but not the
 obligation) to buy the car for <b>$23,000</b>.
 </p>
 </div>
-<div id="outline-container-org0df0c43" class="outline-4">
-<h4 id="org0df0c43"><span class="section-number-4">4.2.1.</span> For each final node (UU, UD/DU, DD), compute the <b>payoff of the purchase option</b>:</h4>
+<div id="outline-container-org1fd0192" class="outline-4">
+<h4 id="org1fd0192"><span class="section-number-4">4.2.1.</span> For each final node (UU, UD/DU, DD), compute the <b>payoff of the purchase option</b>:</h4>
 <div class="outline-text-4" id="text-4-2-1">
 <p>
 \[
@@ -525,12 +529,12 @@ Compute:
 </div>
 </div>
 </div>
-<div id="outline-container-orgf4272ee" class="outline-3">
-<h3 id="orgf4272ee"><span class="section-number-3">4.3.</span> Risk-Neutral Valuation and Option Value Today</h3>
+<div id="outline-container-org6dc4b27" class="outline-3">
+<h3 id="org6dc4b27"><span class="section-number-3">4.3.</span> Risk-Neutral Valuation and Option Value Today</h3>
 <div class="outline-text-3" id="text-4-3">
 </div>
-<div id="outline-container-org4c03463" class="outline-4">
-<h4 id="org4c03463"><span class="section-number-4">4.3.1.</span> Compute the <b>risk-neutral probability</b> \( p^* \) for an up move using:</h4>
+<div id="outline-container-orgdbf654f" class="outline-4">
+<h4 id="orgdbf654f"><span class="section-number-4">4.3.1.</span> Compute the <b>risk-neutral probability</b> \( p^* \) for an up move using:</h4>
 <div class="outline-text-4" id="text-4-3-1">
 <p>
 \[
@@ -557,8 +561,8 @@ Show your calculation and result:
 </ul>
 </div>
 </div>
-<div id="outline-container-org5fbfdf7" class="outline-4">
-<h4 id="org5fbfdf7"><span class="section-number-4">4.3.2.</span> Starting from the option payoffs at the final nodes, work backward through the tree using <b>risk-neutral valuation</b> to find the <b>value of the option at each time-1 node</b>, then at time 0.</h4>
+<div id="outline-container-org8750fb8" class="outline-4">
+<h4 id="org8750fb8"><span class="section-number-4">4.3.2.</span> Starting from the option payoffs at the final nodes, work backward through the tree using <b>risk-neutral valuation</b> to find the <b>value of the option at each time-1 node</b>, then at time 0.</h4>
 <div class="outline-text-4" id="text-4-3-2">
 <p>
 Hint: At each node, the option value is:
@@ -588,8 +592,8 @@ c) <b>Current value (time 0) of the purchase option</b>:  \( C_0 = \) <span clas
 </p>
 </div>
 </div>
-<div id="outline-container-orge3111e4" class="outline-4">
-<h4 id="orge3111e4"><span class="section-number-4">4.3.3.</span> Interpretation:</h4>
+<div id="outline-container-org85ea189" class="outline-4">
+<h4 id="org85ea189"><span class="section-number-4">4.3.3.</span> Interpretation:</h4>
 <div class="outline-text-4" id="text-4-3-3">
 <p>
 In 1–2 sentences, explain in words what the value \( C_0 \) represents.
@@ -597,12 +601,12 @@ In 1–2 sentences, explain in words what the value \( C_0 \) represents.
 </div>
 </div>
 </div>
-<div id="outline-container-org5ebe5a0" class="outline-3">
-<h3 id="org5ebe5a0"><span class="section-number-3">4.4.</span> Comparing to the Extra Lease Payments</h3>
+<div id="outline-container-org4a097fa" class="outline-3">
+<h3 id="org4a097fa"><span class="section-number-3">4.4.</span> Comparing to the Extra Lease Payments</h3>
 <div class="outline-text-3" id="text-4-4">
 </div>
-<div id="outline-container-orgcbf21a3" class="outline-4">
-<h4 id="orgcbf21a3"><span class="section-number-4">4.4.1.</span> Compute the <b>present value (PV)</b> of the extra lease cost in Lease A</h4>
+<div id="outline-container-orgb4090c2" class="outline-4">
+<h4 id="orgb4090c2"><span class="section-number-4">4.4.1.</span> Compute the <b>present value (PV)</b> of the extra lease cost in Lease A</h4>
 <div class="outline-text-4" id="text-4-4-1">
 <p>
 relative to Lease B.
@@ -646,8 +650,8 @@ Show your calculation and write the result:
 </ul>
 </div>
 </div>
-<div id="outline-container-org27e8940" class="outline-4">
-<h4 id="org27e8940"><span class="section-number-4">4.4.2.</span> Compare:</h4>
+<div id="outline-container-org3b96a06" class="outline-4">
+<h4 id="org3b96a06"><span class="section-number-4">4.4.2.</span> Compare:</h4>
 <div class="outline-text-4" id="text-4-4-2">
 <ul class="org-ul">
 <li>Binomial model value of the purchase option: \( C_0 = \) <span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline">__</span></span></span></span></span></span></span></span></span></span></li>
@@ -660,17 +664,17 @@ Are you <b>overpaying</b>, <b>underpaying</b>, or paying about a <b>fair price</
 </div>
 </div>
 </div>
-<div id="outline-container-org0fc24a5" class="outline-3">
-<h3 id="org0fc24a5"><span class="section-number-3">4.5.</span> 5. Conceptual and Discussion Questions</h3>
+<div id="outline-container-org5697dae" class="outline-3">
+<h3 id="org5697dae"><span class="section-number-3">4.5.</span> 5. Conceptual and Discussion Questions</h3>
 <div class="outline-text-3" id="text-4-5">
 </div>
-<div id="outline-container-orgc93be3c" class="outline-4">
-<h4 id="orgc93be3c"><span class="section-number-4">4.5.1.</span> In which future scenarios (states of the world) would you choose to <b>exercise</b> the purchase option (i.e., buy the car at the end of the lease)? When would you <b>walk away</b> and simply return the car?</h4>
+<div id="outline-container-org8feb749" class="outline-4">
+<h4 id="org8feb749"><span class="section-number-4">4.5.1.</span> In which future scenarios (states of the world) would you choose to <b>exercise</b> the purchase option (i.e., buy the car at the end of the lease)? When would you <b>walk away</b> and simply return the car?</h4>
 </div>
 
 
-<div id="outline-container-org4bbe2f9" class="outline-4">
-<h4 id="org4bbe2f9"><span class="section-number-4">4.5.2.</span> How would the value of the purchase option change if:</h4>
+<div id="outline-container-org019237d" class="outline-4">
+<h4 id="org019237d"><span class="section-number-4">4.5.2.</span> How would the value of the purchase option change if:</h4>
 <div class="outline-text-4" id="text-4-5-2">
 <ul class="org-ul">
 <li>The car’s price were <b>more volatile</b> (larger up and down moves each year)?</li>
@@ -684,14 +688,14 @@ For each factor, state whether the option value would tend to <b>increase</b>,
 </p>
 </div>
 </div>
-<div id="outline-container-org2fd00a0" class="outline-4">
-<h4 id="org2fd00a0"><span class="section-number-4">4.5.3.</span> From the dealership’s perspective, why might they be willing to offer a purchase option that appears underpriced (if that’s what you find)? What other business considerations or customer behaviors might affect how they set the lease terms?</h4>
+<div id="outline-container-orgb38eac1" class="outline-4">
+<h4 id="orgb38eac1"><span class="section-number-4">4.5.3.</span> From the dealership’s perspective, why might they be willing to offer a purchase option that appears underpriced (if that’s what you find)? What other business considerations or customer behaviors might affect how they set the lease terms?</h4>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2025-11-23 Sun 13:34</p>
+<p class="date">Created: 2025-11-24 Mon 22:13</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
